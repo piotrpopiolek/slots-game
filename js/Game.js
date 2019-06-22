@@ -28,7 +28,7 @@ class Game {
     this.spanWallet.textContent = money;
     if (result) {
       result = `Wygrałeś ${bid}`;
-    } else if (!result && result != "") {
+    } else if (!result && result !== "") {
       result = `Przegrałeś ${bid}`;
     }
     this.spanResult.textContent = result;
